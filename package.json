@@ -1,16 +1,22 @@
 {
   "name": "reactkrishna",
   "version": "1.0.0",
-  "description": "this is react krishna ",
-  "main": "App.js",
+  "description": "this is react krishna",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",                     
+    "build": "parcel build index.html"                   
   },
   "keywords": [],
   "author": "krishna",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "Reactkrishna"
-  }
-}
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+} 
