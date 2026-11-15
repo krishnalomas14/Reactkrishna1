@@ -1,13 +1,23 @@
 // import { CDN_URL } from "../utils/constants";
 
+import { Link, Navigate, useNavigate } from "react-router-dom";
+
 export const CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  const navigate = useNavigate();
+
+  const handelclick = () => {
+    navigate("/restaurants/95007")
+    console.log("resturant click")
+  }
 
   return (
-    <div className="res-card">
+    <div className="res-card"
+    onClick={handelclick}
+    >
       <img
         alt={resData.info.name}
         className="res-logo"
